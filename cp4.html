@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phobia Assessment</title>
+    <link rel="stylesheet" href="cp4.css"> <!-- Assuming a separate CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Phobia Assessment Questions</h1>
+        <p>Please answer the following questions to assess your level of phobia.</p>
+    </header>
+    
+    <section>
+        <form id="phobiaAssessmentForm">
+            <div class="question">
+                <label for="question1">1. How often do you feel an intense fear of heights?</label>
+                <select id="question1" name="question1">
+                    <option value="">Select...</option>
+                    <option value="Never">Never</option>
+                    <option value="Sometimes">Sometimes</option>
+                    <option value="Often">Often</option>
+                    <option value="Always">Always</option>
+                </select>
+            </div>
+            
+            <div class="question">
+                <label for="question2">2. How often do you feel anxious in closed spaces (e.g., elevators)?</label>
+                <select id="question2" name="question2">
+                    <option value="">Select...</option>
+                    <option value="Never">Never</option>
+                    <option value="Sometimes">Sometimes</option>
+                    <option value="Often">Often</option>
+                    <option value="Always">Always</option>
+                </select>
+            </div>
+            
+            <div class="question">
+                <label for="question3">3. How often do you feel panicked when seeing spiders or insects?</label>
+                <select id="question3" name="question3">
+                    <option value="">Select...</option>
+                    <option value="Never">Never</option>
+                    <option value="Sometimes">Sometimes</option>
+                    <option value="Often">Often</option>
+                    <option value="Always">Always</option>
+                </select>
+            </div>
+            
+            <div class="question">
+                <label for="question4">4. How do you react when flying on an airplane?</label>
+                <select id="question4" name="question4">
+                    <option value="">Select...</option>
+                    <option value="Never experience fear">Never experience fear</option>
+                    <option value="Mild discomfort">Mild discomfort</option>
+                    <option value="Moderate fear">Moderate fear</option>
+                    <option value="Extreme fear">Extreme fear</option>
+                </select>
+            </div>
+            
+            <div class="question">
+                <label for="question5">5. How often do you avoid social situations due to fear of embarrassment?</label>
+                <select id="question5" name="question5">
+                    <option value="">Select...</option>
+                    <option value="Never">Never</option>
+                    <option value="Sometimes">Sometimes</option>
+                    <option value="Often">Often</option>
+                    <option value="Always">Always</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-button">Submit Phobia Assessment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Phobia Assessment Tool</p>
+    </footer>
+
+    <script src="phobia_assessment.js"></script> <!-- For handling form submission -->
+</body>
+</html>

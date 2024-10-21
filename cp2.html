@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment - Mental Health & Phobia Detection</title>
+    <link rel="stylesheet" href="cp2.css">
+</head>
+<body>
+    <header>
+        <h1>Choose Your Assessment</h1>
+        <p>Thank you for sharing your information! Please select the type of assessment you would like to take.</p>
+    </header>
+
+    <section>
+        <h2>Assessment Options</h2>
+        
+        <form id="assessment-form">
+            <!-- Option 1 -->
+            <div class="option">
+                <input type="radio" id="mental-health" name="assessment-type" value="mental-health" required>
+                <label for="mental-health">Mental Health Assessment</label>
+            </div>
+
+            <!-- Option 2 -->
+            <div class="option">
+                <input type="radio" id="phobia" name="assessment-type" value="phobia" required>
+                <label for="phobia">Phobia Assessment</label>
+            </div>
+
+            <!-- Option 3 -->
+            <div class="option">
+                <input type="radio" id="counseling" name="assessment-type" value="counseling" required>
+                <label for="counseling">Counseling Session</label>
+            </div>
+
+            <button type="submit" class="submit-button">Proceed</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mental Health & Phobia Detection. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('assessment-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const selectedOption = document.querySelector('input[name="assessment-type"]:checked');
+
+            if (selectedOption) {
+                const assessmentType = selectedOption.value;
+                alert(`You selected: ${assessmentType}. Thank you!`);
+                
+                // Redirect based on the selection
+                if (assessmentType === 'mental-health') {
+                    window.location.href = 'mental-health-assessment.html'; // Link to the mental health assessment page
+                } else if (assessmentType === 'phobia') {
+                    window.location.href = 'phobia-assessment.html'; // Link to the phobia assessment page
+                } else if (assessmentType === 'counseling') {
+                    window.location.href = 'counseling.html'; // Link to the counseling session page
+                }
+            } else {
+                alert('Please select an assessment type.');
+            }
+        });
+    </script>
+</body>
+</html>

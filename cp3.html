@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Assessment</title>
+    <link rel="stylesheet" href="cp3.css"> <!-- Link to the same CSS for consistency -->
+</head>
+<body>
+    <header>
+        <h1>Mental Health Assessment</h1>
+        <p>Please answer the following questions honestly to help us assess your mental health status.</p>
+    </header>
+
+    <section>
+        <h2>Assessment Questions</h2>
+        <form action="submit_assessment.html" method="post"> <!-- Adjust action URL as needed -->
+            <label for="q1">1. How often do you feel stressed?</label>
+            <select id="q1" name="q1" required>
+                <option value="">Select...</option>
+                <option value="Never">Never</option>
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Often">Often</option>
+                <option value="Always">Always</option>
+            </select>
+
+            <label for="q2">2. How often do you experience difficulty sleeping?</label>
+            <select id="q2" name="q2" required>
+                <option value="">Select...</option>
+                <option value="Never">Never</option>
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Often">Often</option>
+                <option value="Always">Always</option>
+            </select>
+
+            <label for="q3">3. How often do you feel anxious or worried?</label>
+            <select id="q3" name="q3" required>
+                <option value="">Select...</option>
+                <option value="Never">Never</option>
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Often">Often</option>
+                <option value="Always">Always</option>
+            </select>
+
+            <label for="q4">4. How satisfied are you with your daily life?</label>
+            <select id="q4" name="q4" required>
+                <option value="">Select...</option>
+                <option value="Very Unsatisfied">Very Unsatisfied</option>
+                <option value="Unsatisfied">Unsatisfied</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Satisfied">Satisfied</option>
+                <option value="Very Satisfied">Very Satisfied</option>
+            </select>
+
+            <label for="q5">5. Have you lost interest in activities you usually enjoy?</label>
+            <select id="q5" name="q5" required>
+                <option value="">Select...</option>
+                <option value="Never">Never</option>
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Often">Often</option>
+                <option value="Always">Always</option>
+            </select>
+
+            <label for="q6">6. How often do you feel overwhelmed by your responsibilities?</label>
+            <select id="q6" name="q6" required>
+                <option value="">Select...</option>
+                <option value="Never">Never</option>
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Often">Often</option>
+                <option value="Always">Always</option>
+            </select>
+
+            <button type="submit" class="submit-button">Submit Assessment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>We value your privacy. All information is confidential.</p>
+    </footer>
+</body>
+</html>
